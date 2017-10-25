@@ -136,7 +136,7 @@ namespace AYAP_Tipar
 
                 if (i < length)
                 {                                    
-                    Decrypt(containerBlock, dataBlock);             //дешифрование
+                    Decrypt(containerBlock, dataBlock);             //расшифрование
                     fsDataOut.Write(dataBlock, 0, 72);
                 }
 
@@ -182,7 +182,7 @@ namespace AYAP_Tipar
                 }
                 j--;
                 i--;
-                for (; i > k; i--)
+                for (; i >= k; i--)
                 {
                     if (index == 576)
                         break;
@@ -192,7 +192,7 @@ namespace AYAP_Tipar
                 i++;
                 j--;
                 k++;
-                for (; j > k; j--)
+                for (; j >= k; j--)
                 {
                     if (index == 576)
                         break;
@@ -244,7 +244,7 @@ namespace AYAP_Tipar
                 }
                 j--;
                 i--;
-                for (; i > k; i--)
+                for (; i >= k; i--)
                 {
                     if (index == 576)
                         break;
@@ -254,7 +254,7 @@ namespace AYAP_Tipar
                 i++;
                 j--;
                 k++;
-                for (; j > k; j--)
+                for (; j >= k; j--)
                 {
                     if (index == 576)
                         break;
